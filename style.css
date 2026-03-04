@@ -22,7 +22,21 @@ h2 {
 /* flexbox */
 .needs-tab, .wants-tab, .savings-tab {
     display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+
 } /* not sure why the h3 are not also displayed as flex, can change layout to grid later if you want */
+
+.needs-tab, .wants-tab, .savings-tab, h3 {
+    margin-left: 0px;
+    /* unsure what to put here, not sure if this is necessary */
+}
+
+h3 {
+    padding: 8px;
+}
 
 /* needs section */
 .needs-tab h3 { 
@@ -32,7 +46,16 @@ h2 {
     border: 1px solid #000;
     width: 250px;
     height: 40px;
+
+    
 }
+
+.needs-tab {
+    margin-right: 35em;
+    /* pushed needs tab to the left */
+}
+
+
 /* wants section */
 .wants-tab h3 { 
     text-align: center;
@@ -42,6 +65,8 @@ h2 {
     width: 250px;
     height: 40px;
 }
+
+
 /* savings section */
 .savings-tab h3 { 
     text-align: center;
@@ -51,6 +76,12 @@ h2 {
     width: 250px;
     height: 40px;
 }
+
+.savings-tab {
+    margin-left: 35em;
+    /* pushed savings tab to the right */
+}
+
 /* expenses section */
 .expenses-section {
     width: 250px;
